@@ -1,0 +1,25 @@
+<%- include partials/header %>
+<div id="main" class="jumbotron">
+    <div class="container">
+        <h1>Enter your car ID</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <form action="/viewcar" method="GET">
+                        <div id="searchbar" class="input-group">
+                            <input type="text" class="form-control" name="lemonId" placeholder="Enter the Lemon ID" required= "true">
+                            
+                            <span class="input-group-btn">
+                                <input class="btn btn-success btn-default" type="submit" placeholder="Find the car">
+                            </span>
+                        </div>
+                        <!-- /input-group -->                        
+                    </form>
+                </div>
+                <!-- /.col-lg-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+    </div>
+</div>
+<%- include partials/footer %>
