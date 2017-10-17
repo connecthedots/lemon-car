@@ -1,19 +1,9 @@
 <%- include ../partials/header %>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
 <div class= "ui main left aligned container segment">
 	<div class="ui huge header">Make a new account</div>
-	<!-- Error alert -->
-	<div class="container">
-	    <% if (errors && errors.length >0) { %>
-	    	<% errors.forEach(function(error){ %>
-	        <div class="ui warning message" role="alert">
-	            <%= error %>
-	        </div>
-	        <% }) %>
-	    <% } %>
-	</div>
 	<div class="ui form">
 		<form action="/user/signup" method="POST">
-			<input type="hidden" name="_csrf" value="<%= csrfToken %>">
 			<div class="required field">
 			<label>Name</label>
 			<div class="two fields">

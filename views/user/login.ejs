@@ -1,4 +1,5 @@
 <%- include ../partials/header %>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
 <div class= "ui main left aligned container segment">
 	<div class="ui huge header">Log in</div>
 	<!-- Error alert -->
@@ -13,7 +14,6 @@
 	</div>
 	<div class="ui form">
 		<form action="/user/login" method="POST">
-			<input type="hidden" name="_csrf" value="<%= csrfToken %>">
 			<div class="required field">
 				<label for="email">Email</label>
 				<input type="email" name="username" placeholder="Enter your email address">				
@@ -24,7 +24,7 @@
 			</div>
 			<button class="ui huge green button" type="submit">Sign Up</button>
 		</form>
-		<p>Don't have an account? <a href="/user/signup">Register here</a></p>
+		<p>Don't have an account? <a href="/signup">Register here</a></p>
 	</div>
 </div>
 <%- include ../partials/footer %>

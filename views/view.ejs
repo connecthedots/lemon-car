@@ -8,9 +8,13 @@
                 <ul>
                     <li>Make and Model: <%=lemon.model%></li>
                     <li>Year: <%=lemon.year%></li>
+                    <li>Color: <%=lemon.color%></li>
                     <li>VIN: <%=lemon.VIN%></li>
-                    <li>Price: <%=lemon.price%></li>
+                    <li>Price: $<%=lemon.price%></li>
                 </ul>
+                <div>
+                    <a class="btn btn-lg btn-primary" href="/register/<%=lemon._id%>">Get this car</a>
+                </div>
             </div>
         </div>
     </div>

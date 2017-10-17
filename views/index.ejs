@@ -1,25 +1,113 @@
 <%- include partials/header %>
-<div id="main" class="jumbotron">
-    <div class="container">
-        <h1>Enter your car ID</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <form action="/viewcar" method="GET">
-                        <div id="searchbar" class="input-group">
-                            <input type="text" class="form-control" name="lemonId" placeholder="Enter the Lemon ID" required= "true">
-                            
-                            <span class="input-group-btn">
-                                <input class="btn btn-success btn-default" type="submit" placeholder="Find the car">
-                            </span>
+        <!-- Top content -->
+        <div class="top-content">
+            <div class="container">
+            	
+                <div class="row">
+                    <div class="col-sm-12 text wow fadeInLeft">
+                        <h1>Enter Your Lemon ID</h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3">
+                                    <form action="/viewdetail" method="GET">
+                                        <div id="searchbar" class="input-group input-group-lg">
+                                            <input type="text" class="form-control" name="lemonId" placeholder="i.e. TX58S032" required= "true">
+                                            <span class="input-group-btn">
+                                                <input class="btn btn-success btn-default" type="submit" value="Find!">
+                                            </span>
+                                        </div>
+                                        <!-- /input-group -->                        
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-6 -->
+                            </div>
+                            <!-- /.row -->
+                        </div>                     
+                        
+                        
+                        <div class="description">
+                        	<p class="medium-paragraph">
+                         	Find your perfect car and get immediate proof of sale!
+                        	</p>
                         </div>
-                        <!-- /input-group -->                        
-                    </form>
+                    </div>
                 </div>
-                <!-- /.col-lg-6 -->
+                
             </div>
-            <!-- /.row -->
         </div>
-    </div>
-</div>
+        
+        <!-- Features -->
+        <div class="features-container section-container">
+	        <div class="container">
+	        	
+	            <div class="row">
+	                <div class="col-sm-12 features section-description wow fadeIn">
+	                    <h2>How does this service work?</h2>
+	                    <div class="divider-1 wow fadeInUp"><span></span></div>
+	                </div>
+	            </div>
+	            
+	            <div class="row">
+	                <div class="col-sm-6 features-box wow fadeInLeft">
+	                	<div class="row">
+	                		<div class="col-sm-3 features-box-icon">
+	                			<i class="fa fa-cloud"></i>
+	                		</div>
+	                		<div class="col-sm-9">
+	                			<h3>ut wisi enim ad minim</h3>
+		                    	<p>
+		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+		                    		Ut wisi enim ad minim veniam, quis nostrud.
+		                    	</p>
+	                		</div>
+	                	</div>
+	                </div>
+	                <div class="col-sm-6 features-box wow fadeInLeft">
+	                	<div class="row">
+	                		<div class="col-sm-3 features-box-icon">
+	                			<i class="fa fa-instagram"></i>
+	                		</div>
+	                		<div class="col-sm-9">
+	                			<h3>sed do eiusmod tempor</h3>
+		                    	<p>
+		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+		                    		Ut wisi enim ad minim veniam, quis nostrud.
+		                    	</p>
+	                		</div>
+	                	</div>
+	                </div>
+	            </div>
+	            
+	            <div class="row">
+	                <div class="col-sm-6 features-box wow fadeInLeft">
+	                	<div class="row">
+	                		<div class="col-sm-3 features-box-icon">
+	                			<i class="fa fa-paperclip"></i>
+	                		</div>
+	                		<div class="col-sm-9">
+	                			<h3>quis nostrud exerci tat</h3>
+		                    	<p>
+		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+		                    		Ut wisi enim ad minim veniam, quis nostrud.
+		                    	</p>
+	                		</div>
+	                	</div>
+	                </div>
+	                <div class="col-sm-6 features-box wow fadeInLeft">
+	                	<div class="row">
+	                		<div class="col-sm-3 features-box-icon">
+	                			<i class="fa fa-twitter"></i>
+	                		</div>
+	                		<div class="col-sm-9">
+	                			<h3>minim veniam quis nostrud</h3>
+		                    	<p>
+		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+		                    		Ut wisi enim ad minim veniam, quis nostrud.
+		                    	</p>
+	                		</div>
+	                	</div>
+	                </div>
+	            </div>
+	        </div>
+        </div>
 <%- include partials/footer %>
